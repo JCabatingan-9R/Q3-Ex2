@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- SETUP BOOTSTAP: link to Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+	<!-- link to JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+	<!-- Add style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+
+	<title>Exercise 2: Operators</title>
+</head>
+<body>
+	<div class="cir">
+		<h1>Area and Circumference of a Circle</h1>
+		<img src="circle.svg" class="img-fluid">
+		<h4>Radius: 8in</h4>
+		<h3 id="chan" class="mt-3">Looking for the area and circumference of the circle? Click the buttons to find out!</h3>
+
+		<!--Area=pi*(rad**2)-->
+		<button type="button" class="btn btn-success" onclick="const pi=3.14;
+			var radi=8;
+			var Area = pi*(radi**2);
+			document.getElementById('chan').innerHTML = 'The Area of this circle: ' + Area + '.';">
+		Area</button>
+
+		<!--Circumference: 2*pi*r-->
+		<button type="button" class="btn btn-success" onclick="
+			const pi=3.14;
+			var radi=8;
+			var circum = 2*pi*radi;
+			document.getElementById('chan').innerHTML = 'The Circumference of this circle: ' + circum + '.';">Circumference</button>
+
+		<button type="button" class="btn btn-warning" onClick="window.location.reload()">Refresh Page</button>
+	</div>
+
+	<script>
+		window.alert("Welcome to Jade's Exercise 2!")
+	</script>
+</body>
+</html>
